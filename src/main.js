@@ -4,11 +4,10 @@ import App from './App.js';
 import './index.css';
 
 const container = document.getElementById('root');
-
 if (container) {
   createRoot(container).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    React.createElement(React.StrictMode, null, 
+      React.createElement(App)
+    )
   );
 }
