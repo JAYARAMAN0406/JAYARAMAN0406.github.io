@@ -29,11 +29,11 @@ function App() {
     }
   ];
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-    setIsMenuOpen(false);
-  };
+ const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: 'smooth' });
+  setIsMenuOpen(false);
+};
 
   return (
     <div className="min-h-screen bg-gray-50">
